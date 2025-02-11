@@ -1,0 +1,9 @@
+# backend gitignore
+
+__pycache__/
+Trained_Models/
+mlbb_work/
+.env
+expir.py
+config.py
+work/

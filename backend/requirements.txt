@@ -1,0 +1,16 @@
+flask==2.3.2
+flask-cors==4.0.0
+python-dotenv==1.0.0
+pymongo==4.9.2
+requests
+bs4
+pandas
+selenium
+scikit-learn
+pandas
+matplotlib
+seaborn
+scipy
+yellowbrick
+numpy
+tensorflow
