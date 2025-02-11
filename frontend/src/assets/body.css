@@ -1,0 +1,37 @@
+.main-div-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  row-gap: 10px;
+  box-shadow: 0 4px 6px rgba(240, 182, 182, 0.1);
+  column-gap: 10px;
+  border-radius: 8px;
+  margin: 1rem auto;
+  display: center;
+}
+
+
+.right-div,
+.left-div {
+  display: inline-block;
+  size: 1;
+  background: rgba(255, 255, 255, 0.519);
+  display: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  
+}
+.right-div {
+  margin-right: 10px;
+}
+.left-div {
+  margin-left: 10px;
+
+}
+.center-div {
+  width: 75%;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.85);
+  padding-bottom: 12px;
+}

@@ -1,0 +1,9 @@
+.main-div-3 {
+    background-image: url('./lunox.jpg');
+    background-repeat:repeat-y;
+    background-size:cover;
+    background-position: center;
+    
+}
+@media (max-width: 100%) {
+}
