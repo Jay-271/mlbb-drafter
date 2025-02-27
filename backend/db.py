@@ -1,5 +1,3 @@
-from pymongo import MongoClient
-from config import Config
 import os
 import json
 import pandas as pd
