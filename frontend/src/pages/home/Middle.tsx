@@ -134,11 +134,11 @@ function Middle({ baseAPILink }: Props) {
     }
   };
 
-  const resetHeroes = async() => {
-    setBannedHeroes(Array(10).fill(""))
-    setEnemyTeam(Array(5).fill(""))
-    setOurTeam(Array(5).fill(""))
-  }
+  const resetHeroes = async () => {
+    setBannedHeroes(Array(10).fill(""));
+    setEnemyTeam(Array(5).fill(""));
+    setOurTeam(Array(5).fill(""));
+  };
 
   return (
     <>
@@ -146,7 +146,12 @@ function Middle({ baseAPILink }: Props) {
       <h1 id="main-title">--- Welcome to the World's First ---</h1>
       <h2 id="main-subtitle">** Mobile Legends: Bang Bang AI-Drafter! **</h2>
       <h6 id="main-author">// By Jay :) \\</h6>
-
+      <p>
+        Note* AI Models are <strong>big!</strong> <br />
+        <strong>Please</strong> give this page a <strong>couple seconds</strong>{" "}
+        to <strong>load</strong> all the models in the <strong>backend</strong>. <br />
+        ++ Happy drafting ++
+      </p>
       <div className="picksDiv">
         <h4 id="Banned">Banned Heroes</h4>
         <span>(These won't show up during predictions)</span>
@@ -219,14 +224,18 @@ function Middle({ baseAPILink }: Props) {
           ) : (
             "Send it"
           )}
-        </Button> <br/> <br/>
+        </Button>{" "}
+        <br /> <br />
         <Button size="lg" variant="secondary" onClick={resetHeroes}>
           Reset heroes & Bans
         </Button>
       </div>
       <div style={{ textAlign: "center", margin: "2rem" }}>
         {predFull ? (
-          <h1 style={{ fontSize: "100px" }}>Draft is already complete. <br/><h2>Start a new draft to continue.</h2></h1>
+          <h1 style={{ fontSize: "100px" }}>
+            Draft is already complete. <br />
+            <h2>Start a new draft to continue.</h2>
+          </h1>
         ) : (
           <>
             <h5>
