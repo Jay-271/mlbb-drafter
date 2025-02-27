@@ -17,6 +17,7 @@ function Middle({ baseAPILink }: Props) {
   const [ourPickImage, setOurPickImage] = useState("");
   const [enemyPickImage, setEnemyPickImage] = useState("");
   const [loading, setLoading] = useState(false); // For showing loading spinner
+  const [heroLoading, setHeroLoading] = useState(false); // For showing when backend ready
   const [loadingTraining, setLoadingTraining] = useState(false); // For showing loading spinner
   const [highlightedImage, setHighlightedImage] = useState<string | null>(null); // For highlighting the image.
   const [highlightedEnemyImage, setEnemyHighlightedImage] = useState<
@@ -44,6 +45,7 @@ function Middle({ baseAPILink }: Props) {
   // Fetch heroes on mount
   useEffect(() => {
     const fetchHeroes = async () => {
+      setHeroLoading(true); // Show loading something
       try {
         const response = await axios.get(baseAPILink + "/api/heroes", {
           headers: {
@@ -54,6 +56,8 @@ function Middle({ baseAPILink }: Props) {
       } catch (e) {
         console.error("Error getting heroes: ", e);
         setSampleHeroes([""]); // Fallback if there is an error, empty arr will show no heroes.
+      } finally {
+        setHeroLoading(false); // Hide loading something
       }
     };
     fetchHeroes();
@@ -149,8 +153,24 @@ function Middle({ baseAPILink }: Props) {
       <p>
         Note* AI Models are <strong>big!</strong> <br />
         <strong>Please</strong> give this page a <strong>couple seconds</strong>{" "}
-        to <strong>load</strong> all the models in the <strong>backend</strong>. <br />
-        ++ Happy drafting ++
+        to <strong>load</strong> all the models in the <strong>backend</strong>.{" "}
+        <br />
+        ++ Happy drafting ++ <br /> <br />
+        {/* use the loading something */}
+        {heroLoading ? (
+          <div>
+            Loading models...
+            <Spinner
+              animation="border"
+              role="status"
+              style={{ margin: "auto", display: "block" }}
+            >
+              <span className="sr-only"></span>
+            </Spinner>
+          </div>
+        ) : (
+          <span style={{fontSize: "2rem" }}>✔️</span>
+        )}
       </p>
       <div className="picksDiv">
         <h4 id="Banned">Banned Heroes</h4>

@@ -1,7 +1,7 @@
 import os
 import json
 import pandas as pd
-
+import time
 #client = MongoClient(Config.MONGO_URI)
 #print("Databases:", client.list_database_names())
 
@@ -21,7 +21,7 @@ def get_heros():
     hero_arr = [x for x in df_hero['hero']]
     hero_arr.sort()
     #print(hero_arr)
-    
+    time.sleep(15)
     return hero_arr
 
 get_heros()
