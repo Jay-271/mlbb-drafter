@@ -14,9 +14,9 @@ const AboutPage = () => {
         <div style={{ marginTop: "2rem" }}>
           <h2>See you there!</h2>
           <p>
-            <a href="mailto:jasonavilasoria@gmail.com">@Jay</a> or{" "}
-            <a href="mailto:jasonavilasoria@gmail.com">
-              jasonavilasoria@gmail.com
+            <a href="mailto:mlbbdrafter@gmail.com">@Jay</a> or{" "}
+            <a href="mailto:mlbbdrafter@gmail.com">
+              mlbbdrafter@gmail.com
             </a>
           </p>
         </div>

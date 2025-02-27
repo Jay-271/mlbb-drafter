@@ -25,7 +25,7 @@ const AboutPage = () => {
           ...
           <p>
             Have questions? Reach out to &nbsp;
-            <a href="mailto:jasonavilasoria@gmail.com">@Jay</a>.
+            <a href="mailto:mlbbdrafter@gmail.com">@Jay</a>.
           </p>
 ...
         </div>

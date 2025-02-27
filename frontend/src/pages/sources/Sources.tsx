@@ -14,7 +14,7 @@ const Sources = () => {
               Mobile Legends Liquepedia
             </a>
             . For more information contact &nbsp;
-            <a href="mailto:jasonavilasoria@gmail.com">@Jay</a>.
+            <a href="mailto:mlbbdrafter@gmail.com">@Jay</a>.
             <br />
             <strong>
               Note* All images were generated with Whisk AI by Google or a
