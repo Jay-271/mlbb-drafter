@@ -1,3 +1,14 @@
+# Major Changes!!! -> Moving to NextJS & More!!!
+
+This github repository is now depcricated; however much of the same logic still applies when focusing on the LSTM models used. The new site has moved to:
+
+[https://mlbb-hero-drafter.web.app/](https://mlbb-hero-drafter.web.app/)
+
+A new, private repository is being used for this major change. If you'd like to know more, contact me at jasonavilasoria@gmail.com!
+
+---
+Older Documentation
+
 # Public version of the MLBB-AI-Drafter Repo
 
 > 💡 Note: This webapp requires backend requires to function properly. If you'd like to see the fully functioning version of this app, please contact me via email at jasonavilasoria@gmail.com.
